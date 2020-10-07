@@ -52,9 +52,9 @@ open class RNGiphyKeyboard: RCTEventEmitter, GiphyDelegate {
 
         giphy.mediaTypeConfig = mediaTypeConfig
       }
-      if let theme = options?["theme"] as? String, let gphTheme = GPHTheme.with(key: theme) {
-        giphy.theme = gphTheme
-      }
+      // if let theme = options?["theme"] as? String, let gphTheme = GPHTheme.with(key: theme) {
+      //   giphy.theme = gphTheme
+      // }
       giphy.delegate = self
 
       if let rendition = options?["rendition"] as? String {
